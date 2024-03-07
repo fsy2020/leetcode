@@ -56,7 +56,7 @@
 //<div><div>Related Topics</div><div><li>数组</li><li>双指针</li></div></div><br><div><li>👍 2167</li><li>👎 0</li></div>
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution27 {
     public int removeElement(int[] nums, int val) {
         int sum = 0;
         for (int i = 0; i<nums.length; i++){

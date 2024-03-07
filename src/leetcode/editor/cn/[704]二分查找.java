@@ -27,7 +27,7 @@
 //<div><div>Related Topics</div><div><li>数组</li><li>二分查找</li></div></div><br><div><li>👍 1539</li><li>👎 0</li></div>
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution704 {
     public int search(int[] nums, int target) {
         int left = 0;
         int right = nums.length-1;
