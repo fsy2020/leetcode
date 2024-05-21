@@ -47,7 +47,7 @@ import leetcode.editor.util.*;
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {
+class Solution24 {
     public ListNode swapPairs(ListNode head) {
         ListNode dummy = new ListNode(-1,head);
         ListNode cur = dummy;

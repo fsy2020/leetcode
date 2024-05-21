@@ -69,7 +69,7 @@ import leetcode.editor.util.*;
  *     }
  * }
  */
-public class Solution {
+class Solution142 {
     public ListNode detectCycle(ListNode head) {
         ListNode slow = head;
         ListNode fast = head;

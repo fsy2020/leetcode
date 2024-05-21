@@ -53,7 +53,7 @@ import leetcode.editor.util.*;
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {
+class Solution19 {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         if (n == 0) return head;
         int size = 0;

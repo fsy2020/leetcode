@@ -55,7 +55,7 @@ import leetcode.editor.util.*;
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {
+class Solution206 {
     public ListNode reverseList(ListNode head) {
         ListNode pre = null;
         ListNode cur = head;
