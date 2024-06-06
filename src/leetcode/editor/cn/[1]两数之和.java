@@ -48,7 +48,7 @@ import leetcode.editor.util.*;
 //
 //<div><div>Related Topics</div><div><li>数组</li><li>哈希表</li></div></div><br><div><li>👍 18565</li><li>👎 0</li></div>	
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution1 {
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer,Integer> map = new HashMap<>();
         int[] res = new int[2];
