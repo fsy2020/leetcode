@@ -2,27 +2,29 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        String s = " hello   world ";
-
-
+        int days = 10;
+        int[][] meetings = {{5,7},{1,3},{9,10}};
+        int i = countDays(days, meetings);
+        System.out.println(i);
 
     }
-    private static StringBuilder removeSpace(String s) {
-        // System.out.println("ReverseWords.removeSpace() called with: s = [" + s + "]");
-        int start = 0;
-        int end = s.length() - 1;
-        while (s.charAt(start) == ' ') start++;
-        while (s.charAt(end) == ' ') end--;
-        StringBuilder sb = new StringBuilder();
-        while (start <= end) {
-            char c = s.charAt(start);
-            if (c != ' ' || sb.charAt(sb.length() - 1) != ' ') {
-                sb.append(c);
-            }
-            start++;
+    public static int countDays(int days, int[][] meetings) {
+        int[] temp = new int[days + 1];
+        int count = 0;
+        for(int i = 0;i<=days;i++){
+            temp[i] = 0;
         }
-        // System.out.println("ReverseWords.removeSpace returned: sb = [" + sb + "]");
-        return sb;
+        int len = meetings.length;
+        for(int i = 0;i<len;i++){
+            for(int j = meetings[i][0]; j <= meetings[i][1];j++){
+                temp[j-1]++;
+            }
+        }
+        for(int i = 0;i<=days;i++){
+            if(temp[i] == 0)count++;
+
+        }
+        return count - 1;
     }
 
 
